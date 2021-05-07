@@ -1,35 +1,47 @@
-table, thead, th {
-  border: 1px solid black;
-  text-align: center;
+body {
+    text-align: center;
+}
+h3 {
+    margin: 0px auto;
 }
 
-td{
-    border-left: 1px solid black;
+h4 {
+    margin: 15px 0px 0px 0px;
 }
+
+ul {
+    text-align: left;
+}
+
+table, tbody {
+    border: 1px solid black;
+    text-align: center;
+    display: table;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    padding: 0px 15px;
+}
+
+tr{
+    border-bottom: 1px solid black;
+}
+
 .faketable {
-  border: 1px solid black;
-  padding: 10px;
-  display: inline-block;
+    border: 0px solid black;
+    padding: 10px;
+    display: inline-block;
 }
 
-
-
-.who{
-
+.list {
+    align-content: left;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
 }
 
-.what{
-
-}
-
-.where{
-    
-}
-
-.when{
-    
-}
-
-.why{
-    
+.interactive {
+    display: inline-block;
 }

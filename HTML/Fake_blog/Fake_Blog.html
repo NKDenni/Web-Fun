@@ -2,28 +2,25 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Fakest of Blogs</title>
-    <meta name="description" content="Here is the Fakest blog you might find on the internet if you look hard enough">
-    <link rel="stylesheet" href="fakeblog.css">
-    <script src="my_javascript_library.js"></script>
-    <script src="another_javascript_file.js"></script>
+    <meta name="description" content="Here is the Fakest blog you might find on the internet if you look hard enough" />
+    <link rel="stylesheet" href="fakeblog.css" />
 </head>
 
 <body>
     <h1>Welcome to the Fakest of Blogs</h1>
-    <img src="ProfilePic.jpeg" alt="Profile picture" width="400" height="600">
-    <h3>This is the bio section of the fakest of blogs. </h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus, nunc at viverra pharetra, magna diam
-        dapibus velit, sit amet efficitur velit orci a lorem. Duis sit amet leo augue. Cras nec laoreet diam. Ut vel ex
-        fermentum, facilisis lorem quis, suscipit augue. Proin rutrum enim vel odio bibendum porttitor. Nam quis ex leo.
-        Sed sit amet lorem malesuada, ornare elit eu, facilisis velit. Curabitur nibh sem, molestie ut tortor et,
-        vulputate malesuada neque. Praesent non diam ipsum.</p>
-    <h3>Here is a list of links that might not be fake.</h3>
-    <ul>
-        <li><a href="www.google.com">If you are looking for something</a> </li>
-        <li><a href="duckduckgo.com">If you are looking for something but don't like to be tracked.</a></li>
-    </ul>
+    <img src="ProfilePic.jpeg" alt="Profile picture" width="400" height="600" />
+    <h3>This is the bio section of the fakest of blogs</h3>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus, nunc
+        at viverra pharetra, magna diam dapibus velit, sit amet efficitur velit
+        orci a lorem. Duis sit amet leo augue. Cras nec laoreet diam. Ut vel ex
+        fermentum, facilisis lorem quis, suscipit augue. Proin rutrum enim vel
+        odio bibendum porttitor. Nam quis ex leo. Sed sit amet lorem malesuada,
+        ornare elit eu, facilisis velit. Curabitur nibh sem, molestie ut tortor
+        et, vulputate malesuada neque. Praesent non diam ipsum.
+    </p>
     <h3>Here is a table of facts that could be fake</h3>
     <div class="faketable">
         <table>
@@ -40,18 +37,74 @@
                 </tr>
                 <tr>
                     <td>Colonel Mustard</td>
-                    <td>Candle Stick</td>
-                    <td>Study</td>
+                    <td>Revolver</td>
+                    <td>Hall</td>
                     <td>8:00pm</td>
-                    <td>Angry at Mr. Green</td>
+                    <td>Angry at Mr. Green for past deeds</td>
                 </tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
+                <tr>
+                    <td>Miss Scarlett</td>
+                    <td>Candle Stick</td>
+                    <td>Dining Room</td>
+                    <td>11:00pm</td>
+                    <td>Inheret Mrs. Whites fortune</td>
+                </tr>
+                <tr>
+                    <td>Prof. Plum</td>
+                    <td>Knife</td>
+                    <td>Library</td>
+                    <td>2:00pm</td>
+                    <td>Revenge against Mrs. Peacock</td>
+                </tr>
+                <tr>
+                    <td>Dr. Orchard</td>
+                    <td>Lead Pipe</td>
+                    <td>Conservatory</td>
+                    <td>7:00pm</td>
+                    <td>Steal Prf. Plums Research</td>
+                </tr>
             </tbody>
         </table>
     </div>
-
+    <h3>Here is a list of links where you might find a clue</h3>
+    <div class="list">
+        <ul>
+            <li><a href="www.google.com">If you are looking for something</a></li>
+            <li>
+                <a href="duckduckgo.com">If you are looking for something but don't like to be tracked.</a>
+            </li>
+        </ul>
+    </div>
+    <h3>Who do you think did it?</h3>
+    <div class="interactive">
+        <form>
+            <label for="who"></label>
+            <select name="who" id="who">
+                <option value="-"><span style="text-align: " center>-</span></option>
+                <option value="Colonel Mustard">Colonel Mustard</option>
+                <option value="Miss Scarlett">Miss Scarlett</option>
+                <option value="Prof Plum">Prof. Plum</option>
+                <option value="Dr Orchard">Dr. Orchard</option>
+                <option value="Mrs. White">Mrs. White</option>
+                <option value="Mr. Green">Mr. Green</option>
+            </select>
+            <h4>Join our email list for future games!</h4>
+            <label> Email:<input type="text" name="email" /> </label>
+            <br />
+            <label>
+                Join our email newsletter!<input type="radio" name="gender" value="male" />
+            </label>
+            <label>
+                No emails please.<input type="radio" name="gender" value="female" />
+            </label>
+            <h4>How did you find us?</h4>
+            <label> facebook<input type="checkbox" id="facebook" /> </label>
+            <label> twitter<input type="checkbox" id="twitter" /> </label>
+            <label> Other:<input type="text" name="other" /> </label>
+            <br /><br />
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
 </body>
 
 </html>
