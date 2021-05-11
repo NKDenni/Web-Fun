@@ -1,5 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
 .nav {
     height: 150px;
+    width: 98%;
     border: 20px solid white;
     background: rgb(74, 152, 232);
     display: flex;
@@ -23,7 +31,6 @@
 
 .nav li {
     flex: 1;
-    min-width: 200px;
     display: inline;
 }
 
