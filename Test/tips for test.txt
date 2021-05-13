@@ -1,0 +1,55 @@
+TIPS FOR WF TEST SUCCESS
+
+PLEASE DO
+- Use your notes, past assignments, and the Internet to help you
+- Use the HTML validator (doesn't work on CSS btw, don't worry about that)
+- Use a separate CSS file
+- Use a wrapper div with a fixed height and width to contain everything
+- Get all HTML elements on page, use proper tags (use <button> where you see a button, etc)
+- Pay attention to how many times you use classes/ids (id names should only show up once, class names multiple times)
+- Indent your HTML code, and write neat CSS
+- Use a separate folder for your test (the folder only contains the relevant HTML/CSS/images for the test only)
+- Hand something in within your time limit (I can't grade nothing)
+- Understand that it does not have to be perfect to pass, go for "close enough"
+- Keep a relaxed mind :) Plan out your time
+- Watch all of this month's lecture videos + weekend session video if you haven't yet
+
+
+
+
+PLEASE TRY TO DO
+- Draw a box model -> Position your divs before you start adding content to them
+- Recreate the page as best as possible (if something looks green, use the color green instead of trying to find the exact color at first)
+- Inform me if you are colorblind
+- Work on one piece of your file at once
+- Use as few divs as possible
+- Use as few classes/ids as possible
+- Use chaining selectors (ul li, #about h4) where possible
+- Use meaningful names in your ids/classes so that non-coders could understand them
+
+
+
+
+
+PLEASE DON'T
+- Use your other classmates to help you
+- Not use the HTML validator (gee, I mention this a lot!)
+- Have an img src be an absolute path specific to your computer (C://Users/LilBilly/Desktop... That is specific to just LilBilly's computer!)
+- Make up your own HTML tags
+- Put any CSS/width/height/<style> in your HTML file
+- Have a single image be the only thing inside of a div
+- Code for many hours straight - take a lunch break, walk, or bathroom break if you need to clear your mind
+- <br> (Display + margin/padding instead)
+- <hr>
+- float: _______ (Display + margin/padding + vertical-align instead)
+- position: _______ (99% of the time you don't need it)
+
+
+
+
+
+MAKE SURE YOU UNDERSTAND
+- display property, flexbox concepts, when flex comes in handy and when it shouldn't be used
+- margin/padding
+- vertical-align
+- why you would use a class or an id in a situation

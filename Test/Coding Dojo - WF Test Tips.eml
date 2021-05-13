@@ -1,0 +1,194 @@
+Delivered-To: nathandenni@gmail.com
+Received: by 2002:a05:6520:384a:b029:ef:4959:3e51 with SMTP id c10csp5226552lkx;
+        Wed, 12 May 2021 09:57:52 -0700 (PDT)
+X-Received: by 2002:a9d:6255:: with SMTP id i21mr28156823otk.284.1620838671973;
+        Wed, 12 May 2021 09:57:51 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1620838671; cv=none;
+        d=google.com; s=arc-20160816;
+        b=KxRCA9JA2wDynuFt2Vj5Qajfv1flnV/SKExbf4k+Fm2lI0v0q/GJ3hNS7E0VXJKX9B
+         4kyE++PsyqYuMNxAOegf2UMlrrfTZfO6azUm+OMjLVQNqZYk86VUAbbqzGs2sJyNJuuN
+         WAv02wlXo8g1uF3YM1K0jqBpmLSY348IkOqKdfmE8ABq4zD0M79R99Dfy3bi94VYzfO5
+         D5fO6m7Io8hTUotpbDwkOimTYkpJfDDWLP1oGXlYSFW3EaWLmx8mx0XrHrvv5dSF5SqU
+         2inNkKlno/RVPzTQ7uH1he89E3SsV1qE8sucYZUbZZ+XJTekzAnWAc9Y2P9b3SzrmKPK
+         86Dw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=TYg/QrMHu0OiFRwkt9bnB+TeWqO6qavxtjFqUSLLPcI=;
+        b=EbstpU7UPwFw88sdqor4lY4b29rtwzV7pWRfsXaorsg4bSdYCMoSRjb9hBflI73AQ2
+         nqogAAW1FtynkGMGhJEF/DtvLAFwTbtLxHeWCbx9ssXsQx6l1TkzjDWuox63l5GeXqy+
+         FPZFxf5cJb+9tayLIlMGUP4pcv+ipWOLtLME9ZorF1Iu4yx822PLUQELb5huxr8zHzHX
+         HDHfk0riKE65yUtygCayJrE8LS2liYqTrf5YvpcjeKyNbD+a2aO2JeDAiJ7OVjwlYjpe
+         IBpLBmmYneIS/s3k0TIkSPFHFFURrLwPeVeCbiyZZKOo4gLtK3tSp0UPMz+4T60OLDZV
+         sYfA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@codingdojo-com.20150623.gappssmtp.com header.s=20150623 header.b=Hn84vJgi;
+       spf=pass (google.com: domain of zpieper@codingdojo.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=zpieper@codingdojo.com
+Return-Path: <zpieper@codingdojo.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id p5sor93507otk.34.2021.05.12.09.57.51
+        for <nathandenni@gmail.com>
+        (Google Transport Security);
+        Wed, 12 May 2021 09:57:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of zpieper@codingdojo.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@codingdojo-com.20150623.gappssmtp.com header.s=20150623 header.b=Hn84vJgi;
+       spf=pass (google.com: domain of zpieper@codingdojo.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=zpieper@codingdojo.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=codingdojo-com.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=TYg/QrMHu0OiFRwkt9bnB+TeWqO6qavxtjFqUSLLPcI=;
+        b=Hn84vJgikhvx0MTN/pSBapoIIilhj/DUDQJASpnu9sRVyIFNl24ZCsZbC0SFm93ZSg
+         zaDE8PRIc3heMpkamztwAyPSjTjMemtoeDe2L9XlzriWOIzQFThzAKHw8lJ+Lzb1aj5G
+         Fh253fi+fLJJzG0iIx5pY6w3v3hyi81N05drMMYDWSFLqwoy+85uHLhTgcckY5+WTq1o
+         rhlj9ABHtOY+no0E6v8Fj0lTk9JzGCbJpbtC+ZkEA3VBInAiIrid6laxCH6yWsfQk4Wn
+         1doyzQZAs+pZOXpEkbbTdPHxVdXl3HjyzhFAG7YmosOk0Dc/sh2Qqrx+H7UD8ztpnkR3
+         CQjw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=TYg/QrMHu0OiFRwkt9bnB+TeWqO6qavxtjFqUSLLPcI=;
+        b=c7J22U/ya0cqRf+WKF9YGDAU0Tk5fadVV1z3kE3aH4hvu8PG0dc4pSjPWqEUeUPD+x
+         81FXok0iREG0PLdNtSIyzHONmI6tHG9vSolryDNoc+zzlTeG9fy2xJsaElcnfxovrVah
+         0bUxBYjLPc3NkIvdBF/2nzrO5qGYUptH4Crhk7Ek0sbl+B0xFNJH8rc3snD539lOYUPk
+         qj2YcUynQCyD84sfiD2W6QCO9WkqC/QMWvJnDx+nkGANU5+anOvktrxEz0LUI3613IvQ
+         9FqojVOjFHBHhuw7JDJV/bI6gS2LgyENP4MMVTPMq9xuPNmecWxf8wuu72HOVhlPppFV
+         P67A==
+X-Gm-Message-State: AOAM5321Zdy+s+Rbc3G2DnLoXebF4ZzwPpg/6QYuXPoltAiJoXVe84lU
+	h3sME4MOewpnYvXqOwdwl1tZDzO5wfCZbc5ZbIdVYw==
+X-Google-Smtp-Source: ABdhPJxVozhKVgyCljlfUS1/5++dcsUzg9jzL+iEN8+kJBigiol3UfJrnn+lyab6ydnhChBecyGGU+wKr6Uh0EsV+AQ=
+X-Received: by 2002:a9d:6353:: with SMTP id y19mr24328045otk.241.1620838671371;
+ Wed, 12 May 2021 09:57:51 -0700 (PDT)
+MIME-Version: 1.0
+From: Zack Pieper <zpieper@codingdojo.com>
+Date: Wed, 12 May 2021 11:57:40 -0500
+Message-ID: <CAAdrcvDpOcabP_Eo0+jPimf377SFThgbQUL5aXO9FhLNsuF5fA@mail.gmail.com>
+Subject: Coding Dojo - WF Test Tips
+To: undisclosed-recipients:;
+Content-Type: multipart/mixed; boundary="0000000000003f045805c224e9c9"
+Bcc: nathandenni@gmail.com
+
+--0000000000003f045805c224e9c9
+Content-Type: multipart/alternative; boundary="0000000000003f045605c224e9c7"
+
+--0000000000003f045605c224e9c7
+Content-Type: text/plain; charset="UTF-8"
+
+Attached is a txt file of tips for taking your test, *please read this over*
+before your first Web Fundamentals test.
+
+Before taking your test, make sure the *Portfolio* assignment is done, and
+also make sure it is following most of what is in the txt file. Your 24
+hour test will have a lot of the same aspects of this critical assignment.
+
+Let me know if you have any questions on what is in the txt file!
+-- 
+
+*Zachary Pieper*
+
+Coding Dojo | Instructor
+
+zpieper@codingdojo.com
+
+Seattle | San Jose | Berkeley | Burbank | Chicago
+
+Arlington | Dallas | Orange County | Tulsa | Boise | Online
+
+CodingDojo.com <http://codingdojo.com/>
+
+Transforming lives through programming literacy.
+
+--0000000000003f045605c224e9c7
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Attached is a txt file of tips for taking your test, <u><b=
+ style=3D"background-color:rgb(244,204,204)">please read this over</b></u> =
+before your first Web Fundamentals test.<br clear=3D"all"><div><br></div><d=
+iv>Before taking your test, make sure the <u style=3D"font-weight:bold">Por=
+tfolio</u>=C2=A0assignment is done,=C2=A0and also make sure it is following=
+ most of what is in the txt file. Your 24 hour test will have a lot of the =
+same aspects of this critical assignment.</div><div><br></div><div>Let me k=
+now if you have any questions on what is in the txt=C2=A0file!</div>-- <br>=
+<div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=3D"gmail_signatur=
+e"><div dir=3D"ltr"><div><div dir=3D"ltr"><p dir=3D"ltr" style=3D"line-heig=
+ht:1.38;margin-top:0pt;margin-bottom:0pt"><font face=3D"arial, helvetica, s=
+ans-serif"><img src=3D"http://codingdojo_assets.s3.amazonaws.com/images/glo=
+bal/coding_dojo_logo_black.png" height=3D"28" width=3D"96" style=3D"color:r=
+gb(102,102,102)"></font></p><p style=3D"line-height:1.38;margin-top:0pt;mar=
+gin-bottom:0pt"><font face=3D"arial, helvetica, sans-serif" color=3D"#66666=
+6" size=3D"1"><b>Zachary Pieper</b></font></p><p dir=3D"ltr" style=3D"line-=
+height:1.38;margin-top:0pt;margin-bottom:0pt"><span style=3D"color:rgb(102,=
+102,102);vertical-align:baseline"><font face=3D"arial, helvetica, sans-seri=
+f" size=3D"1">Coding Dojo | Instructor</font></span></p><p dir=3D"ltr" styl=
+e=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt"><span style=3D"colo=
+r:rgb(17,85,204);vertical-align:baseline"><font face=3D"arial, helvetica, s=
+ans-serif" size=3D"1"><a href=3D"mailto:zpieper@codingdojo.com" target=3D"_=
+blank">zpieper@codingdojo.com</a></font></span></p><p style=3D"line-height:=
+1.38;margin-top:0pt;margin-bottom:0pt"><font face=3D"arial, helvetica, sans=
+-serif" size=3D"1"><span style=3D"color:rgb(102,102,102);white-space:pre-wr=
+ap">Seattle | San Jose | Berkeley | Burbank</span>=C2=A0|=C2=A0<span style=
+=3D"color:rgb(102,102,102);white-space:pre-wrap">Chicago </span></font></p>=
+<p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt">=
+<span style=3D"color:rgb(102,102,102);vertical-align:baseline;white-space:p=
+re-wrap"><font face=3D"arial, helvetica, sans-serif" size=3D"1">Arlington |=
+ Dallas | Orange County | Tulsa | Boise | Online</font></span></p><p dir=3D=
+"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt"><span sty=
+le=3D"color:rgb(102,102,102);vertical-align:baseline;white-space:pre-wrap">=
+<font face=3D"arial, helvetica, sans-serif" size=3D"1"><a href=3D"http://co=
+dingdojo.com/" style=3D"color:rgb(17,85,204)" target=3D"_blank">CodingDojo.=
+com</a></font></span></p><p dir=3D"ltr" style=3D"line-height:1.38;margin-to=
+p:0pt;margin-bottom:0pt"><span style=3D"color:rgb(102,102,102);background-c=
+olor:transparent;font-style:italic;vertical-align:baseline"><font face=3D"a=
+rial, helvetica, sans-serif" size=3D"1">Transforming lives through programm=
+ing literacy.</font></span></p></div></div></div></div></div>
+
+--0000000000003f045605c224e9c7--
+--0000000000003f045805c224e9c9
+Content-Type: text/plain; charset="US-ASCII"; name="tips.txt"
+Content-Disposition: attachment; filename="tips.txt"
+Content-Transfer-Encoding: base64
+Content-ID: <f_kolpdgr00>
+X-Attachment-Id: f_kolpdgr00
+
+VElQUyBGT1IgV0YgVEVTVCBTVUNDRVNTCgpQTEVBU0UgRE8KLSBVc2UgeW91ciBub3RlcywgcGFz
+dCBhc3NpZ25tZW50cywgYW5kIHRoZSBJbnRlcm5ldCB0byBoZWxwIHlvdQotIFVzZSB0aGUgSFRN
+TCB2YWxpZGF0b3IgKGRvZXNuJ3Qgd29yayBvbiBDU1MgYnR3LCBkb24ndCB3b3JyeSBhYm91dCB0
+aGF0KQotIFVzZSBhIHNlcGFyYXRlIENTUyBmaWxlCi0gVXNlIGEgd3JhcHBlciBkaXYgd2l0aCBh
+IGZpeGVkIGhlaWdodCBhbmQgd2lkdGggdG8gY29udGFpbiBldmVyeXRoaW5nCi0gR2V0IGFsbCBI
+VE1MIGVsZW1lbnRzIG9uIHBhZ2UsIHVzZSBwcm9wZXIgdGFncyAodXNlIDxidXR0b24+IHdoZXJl
+IHlvdSBzZWUgYSBidXR0b24sIGV0YykKLSBQYXkgYXR0ZW50aW9uIHRvIGhvdyBtYW55IHRpbWVz
+IHlvdSB1c2UgY2xhc3Nlcy9pZHMgKGlkIG5hbWVzIHNob3VsZCBvbmx5IHNob3cgdXAgb25jZSwg
+Y2xhc3MgbmFtZXMgbXVsdGlwbGUgdGltZXMpCi0gSW5kZW50IHlvdXIgSFRNTCBjb2RlLCBhbmQg
+d3JpdGUgbmVhdCBDU1MKLSBVc2UgYSBzZXBhcmF0ZSBmb2xkZXIgZm9yIHlvdXIgdGVzdCAodGhl
+IGZvbGRlciBvbmx5IGNvbnRhaW5zIHRoZSByZWxldmFudCBIVE1ML0NTUy9pbWFnZXMgZm9yIHRo
+ZSB0ZXN0IG9ubHkpCi0gSGFuZCBzb21ldGhpbmcgaW4gd2l0aGluIHlvdXIgdGltZSBsaW1pdCAo
+SSBjYW4ndCBncmFkZSBub3RoaW5nKQotIFVuZGVyc3RhbmQgdGhhdCBpdCBkb2VzIG5vdCBoYXZl
+IHRvIGJlIHBlcmZlY3QgdG8gcGFzcywgZ28gZm9yICJjbG9zZSBlbm91Z2giCi0gS2VlcCBhIHJl
+bGF4ZWQgbWluZCA6KSBQbGFuIG91dCB5b3VyIHRpbWUKLSBXYXRjaCBhbGwgb2YgdGhpcyBtb250
+aCdzIGxlY3R1cmUgdmlkZW9zICsgd2Vla2VuZCBzZXNzaW9uIHZpZGVvIGlmIHlvdSBoYXZlbid0
+IHlldAoKCgoKUExFQVNFIFRSWSBUTyBETwotIERyYXcgYSBib3ggbW9kZWwgLT4gUG9zaXRpb24g
+eW91ciBkaXZzIGJlZm9yZSB5b3Ugc3RhcnQgYWRkaW5nIGNvbnRlbnQgdG8gdGhlbQotIFJlY3Jl
+YXRlIHRoZSBwYWdlIGFzIGJlc3QgYXMgcG9zc2libGUgKGlmIHNvbWV0aGluZyBsb29rcyBncmVl
+biwgdXNlIHRoZSBjb2xvciBncmVlbiBpbnN0ZWFkIG9mIHRyeWluZyB0byBmaW5kIHRoZSBleGFj
+dCBjb2xvciBhdCBmaXJzdCkKLSBJbmZvcm0gbWUgaWYgeW91IGFyZSBjb2xvcmJsaW5kCi0gV29y
+ayBvbiBvbmUgcGllY2Ugb2YgeW91ciBmaWxlIGF0IG9uY2UKLSBVc2UgYXMgZmV3IGRpdnMgYXMg
+cG9zc2libGUKLSBVc2UgYXMgZmV3IGNsYXNzZXMvaWRzIGFzIHBvc3NpYmxlCi0gVXNlIGNoYWlu
+aW5nIHNlbGVjdG9ycyAodWwgbGksICNhYm91dCBoNCkgd2hlcmUgcG9zc2libGUKLSBVc2UgbWVh
+bmluZ2Z1bCBuYW1lcyBpbiB5b3VyIGlkcy9jbGFzc2VzIHNvIHRoYXQgbm9uLWNvZGVycyBjb3Vs
+ZCB1bmRlcnN0YW5kIHRoZW0KCgoKCgpQTEVBU0UgRE9OJ1QKLSBVc2UgeW91ciBvdGhlciBjbGFz
+c21hdGVzIHRvIGhlbHAgeW91Ci0gTm90IHVzZSB0aGUgSFRNTCB2YWxpZGF0b3IgKGdlZSwgSSBt
+ZW50aW9uIHRoaXMgYSBsb3QhKQotIEhhdmUgYW4gaW1nIHNyYyBiZSBhbiBhYnNvbHV0ZSBwYXRo
+IHNwZWNpZmljIHRvIHlvdXIgY29tcHV0ZXIgKEM6Ly9Vc2Vycy9MaWxCaWxseS9EZXNrdG9wLi4u
+IFRoYXQgaXMgc3BlY2lmaWMgdG8ganVzdCBMaWxCaWxseSdzIGNvbXB1dGVyISkKLSBNYWtlIHVw
+IHlvdXIgb3duIEhUTUwgdGFncwotIFB1dCBhbnkgQ1NTL3dpZHRoL2hlaWdodC88c3R5bGU+IGlu
+IHlvdXIgSFRNTCBmaWxlCi0gSGF2ZSBhIHNpbmdsZSBpbWFnZSBiZSB0aGUgb25seSB0aGluZyBp
+bnNpZGUgb2YgYSBkaXYKLSBDb2RlIGZvciBtYW55IGhvdXJzIHN0cmFpZ2h0IC0gdGFrZSBhIGx1
+bmNoIGJyZWFrLCB3YWxrLCBvciBiYXRocm9vbSBicmVhayBpZiB5b3UgbmVlZCB0byBjbGVhciB5
+b3VyIG1pbmQKLSA8YnI+IChEaXNwbGF5ICsgbWFyZ2luL3BhZGRpbmcgaW5zdGVhZCkKLSA8aHI+
+Ci0gZmxvYXQ6IF9fX19fX18gKERpc3BsYXkgKyBtYXJnaW4vcGFkZGluZyArIHZlcnRpY2FsLWFs
+aWduIGluc3RlYWQpCi0gcG9zaXRpb246IF9fX19fX18gKDk5JSBvZiB0aGUgdGltZSB5b3UgZG9u
+J3QgbmVlZCBpdCkKCgoKCgpNQUtFIFNVUkUgWU9VIFVOREVSU1RBTkQKLSBkaXNwbGF5IHByb3Bl
+cnR5LCBmbGV4Ym94IGNvbmNlcHRzLCB3aGVuIGZsZXggY29tZXMgaW4gaGFuZHkgYW5kIHdoZW4g
+aXQgc2hvdWxkbid0IGJlIHVzZWQKLSBtYXJnaW4vcGFkZGluZwotIHZlcnRpY2FsLWFsaWduCi0g
+d2h5IHlvdSB3b3VsZCB1c2UgYSBjbGFzcyBvciBhbiBpZCBpbiBhIHNpdHVhdGlvbg==
+--0000000000003f045805c224e9c9--
