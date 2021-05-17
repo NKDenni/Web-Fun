@@ -1,0 +1,239 @@
+* {
+  /*outline: 1px dashed red;*/
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  list-style: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+  width: 38%;
+  display: inline;
+}
+
+
+.container {
+  width: 970px;
+  height: 970px;
+  background-color: rgb(35 80 118);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Python logo and search area overhang and are not centered relative to the nav bar in example. I brought these more centered and evenly overhanging on either side. */
+
+.header {
+  display: flex;
+  width: 970px;
+  justify-content: space-around;
+}
+
+.top_container {
+  color: white;
+  display: flex;
+  width: 380px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.search {
+  width: 320px;
+  height: 65px;
+  margin-top: 5px;
+  background-color: rgb(68 68 68);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px black;
+}
+
+.search input {
+  padding: 10px 15px;
+  font-size: 12px;
+  border: 2px solid #a2a2a2;
+  text-align: center;
+  box-shadow: 1px 1px 1px black;
+}
+
+.search button {
+  width: 40px;
+  height: 30px;
+  margin-left: 10px;
+  background-color: rgb(35 80 118);
+  border-radius: 5px;
+  border-color: rgb(190 190 190);
+  color: white;
+    box-shadow: 1px 1px 1px black;
+}
+
+.top_container p{
+    margin-right: 45px;
+    text-align: right;
+}
+
+p a {
+  color: rgb(172 155 29);
+}
+
+#l {
+  color: black;
+  font-size: 20px;
+}
+
+/* nav bar is not centered in exampl. It bothered me so I centered my nav bar */
+
+.nav {
+    width: 87%;
+    height: 60px;
+    color: white;
+    background-image: linear-gradient(rgb(56 118 172), rgb(70 126 173), rgb(56 118 172) );
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav a {
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+}
+
+.main {
+    width: 970px;
+    padding: 25px 0px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.resources {
+    padding: 10px;
+    margin: 0px 25px;
+    max-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.resources li {
+    list-style: disc;
+}
+
+.resources a {
+    color: white;
+    font-size: larger;
+}
+
+.content {
+    max-width: 600px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.values {
+    color: rgb(234 199 59);
+    height: 300px;
+    font-size: x-large;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.values span {
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.lower-container {
+    min-width: 970px;
+    height: 250px;
+    padding: 30px 0px;
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    box-shadow: 0px -5px rgb(23 56 83);
+}
+
+.lower-container h3 {
+    padding: 10px
+}
+
+.lower-container a {
+    color: rgb(145 186 221);
+    text-decoration-line: none;
+}
+
+.lower-container p{
+    text-align: center;
+}
+
+.lower-container li {
+    list-style: square;
+    text-align: center;
+    margin: 1px;
+}
+
+.getting-started {
+    border-top: 5px solid rgb(114 167 213);
+    width: 400px;
+    min-height: 200px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.applications {
+    border-top: 5px solid rgb(114 167 213);
+    width: 400px;
+    min-height: 200px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pypi {
+    font-size: small;
+    text-decoration-line: none;
+}
+
+.footer {
+    display: inline;
+    width: 970px;
+    height: 150px;
+    color: rgb(145 186 221);
+    background-image: linear-gradient(rgb(36 81 119), rgb(53 115 171));
+    text-align: center;
+}
+
+.footer ul{ 
+    margin-top: 30px;
+    padding: 0px 50px 10px 50px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.footer li a {
+    color: rgb(145 186 221);
+    font-size: larger;
+    text-decoration-line: none;
+}

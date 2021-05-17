@@ -1,0 +1,19 @@
+Commands I used:
+
+cd - Change directory
+   - "cd .." Goes up one directory
+
+cp - Copy file/directory
+   - "cp -r" copy with recursive flag when copying a directory it will copy all subfolders and files contained within the directory.
+
+ls - list files in directory
+   - "ls -a" list all files inculduing hidden
+
+mkdir - Creates new directory(folder)
+
+mv - moves file/directory from source to destination
+
+nano - Command line/Terminal text editor I used to create .html .css .txt files
+
+rm - removes/deletes file/directory
+
