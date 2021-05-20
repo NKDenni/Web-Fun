@@ -1,0 +1,79 @@
+cd /Desktop
+mkdir "test"
+cd test
+touch index.html
+touch styles.css
+nano index.html
+git add .
+git commit -m "First commit index.html"
+nano index.html
+git add index.html
+git commit -m "Updated html"
+nano styles.css
+git add styles.css
+git commit -m "Updated css"
+git log
+
+---
+commit 63ab365f5aedaf3adb507f1a0481213273485340 (HEAD -> master)
+Author: Nathan Denni <aubakasan303@gmail.com>
+Date:   Thu May 20 15:28:47 2021 -0700
+
+    Updated css
+
+commit 242928baaf3c8270ae0582f52d4f6be3b8f3c775
+Author: Nathan Denni <aubakasan303@gmail.com>
+Date:   Thu May 20 15:24:18 2021 -0700
+
+    Updated HTML
+
+commit df82cfdab8abc388aafbcaa4c2f578e40130da31
+Author: Nathan Denni <aubakasan303@gmail.com>
+Date:   Thu May 20 15:15:56 2021 -0700
+
+    First commit html test
+---
+
+git revert -n HEAD
+nano styles.css
+git add .
+git commit -m "Reupdated CSS"
+git log
+
+---
+commit 1ce24e8cd5794305a1aaa1667b40d5426796a28f (HEAD -> master)
+Author: Nathan Denni <aubakasan303@gmail.com>
+Date:   Thu May 20 15:39:41 2021 -0700
+
+    Reupdated CSS
+
+commit bd3424aefc7c3f228eace5dbc2aed1c79904bc7e
+Author: Nathan Denni <aubakasan303@gmail.com>
+Date:   Thu May 20 15:33:22 2021 -0700
+
+    Revert "Updated css"
+    
+    This reverts commit 63ab365f5aedaf3adb507f1a0481213273485340.
+
+commit 63ab365f5aedaf3adb507f1a0481213273485340
+Author: Nathan Denni <aubakasan303@gmail.com>
+Date:   Thu May 20 15:28:47 2021 -0700
+
+    Updated css
+
+commit 242928baaf3c8270ae0582f52d4f6be3b8f3c775
+Author: Nathan Denni <aubakasan303@gmail.com>
+Date:   Thu May 20 15:24:18 2021 -0700
+
+    Updated HTML
+
+commit df82cfdab8abc388aafbcaa4c2f578e40130da31
+Author: Nathan Denni <aubakasan303@gmail.com>
+Date:   Thu May 20 15:15:56 2021 -0700
+
+    First commit html test
+---
+
+touch gitCommand.txt
+git push
+ 
