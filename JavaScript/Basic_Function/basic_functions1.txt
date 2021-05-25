@@ -1,4 +1,4 @@
-Functions predicted/correct: 
+Functions predicted/correct:  14/15
 
 1. Will print to console 35.
 
