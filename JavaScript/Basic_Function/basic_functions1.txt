@@ -1,0 +1,143 @@
+Functions predicted/correct: 
+
+1. Will print to console 35.
+
+function a(){
+    return 35;
+}
+console.log(a())
+
+2. Will print to console 8.
+
+function a(){
+    return 4;
+}
+console.log(a()+a());
+
+3. Will print to console 6.
+
+function a(b){
+    return b;
+}
+console.log(a(2)+a(4));
+
+4. Will print to console 3 and then 9.
+
+function a(b){
+    console.log(b);
+    return b*3;
+}
+console.log(a(3));
+
+5. Will print to console 40. Function ignores everything after return.
+
+function a(b){
+   return b*4;
+   console.log(b);
+}
+console.log(a(10));
+
+6. Will print to console 4. Function gets called to check if 15 is less than 10. It is not so it returns 4. Ignores everything after return.
+
+function a(b){
+    if(b<10) {
+        return 2;
+    }
+    else     {
+        return 4;
+    }
+    console.log(b);
+}
+console.log(a(15));
+
+7. First will print 10 and 3 to console. Then will print 30 to console. Function multiplies 3*10 and returns 30 to main code.
+
+function a(b,c){
+    return b*c;
+}
+console.log(10,3);
+console.log( a(3,10) );
+
+8. Will log to consel 3 and then 4. Function does not get called.
+
+function a(b){
+    for(var i=0; i<10; i++){
+        console.log(i);
+    }
+    return i;
+}
+console.log(3);
+console.log(4);
+
+9. Will print to console 2, 5, 8, 11. 
+
+function a(){
+    for(var i=0; i<10; i++){
+        i = i +2;
+        console.log(i);
+    }
+}
+a();
+
+10. Will log 0,1,2,3,4,5,6,7,8,9 and then 0. (My prediction was wrong prints 0 through 9 on the first call and then 0 through 9 + 0 on the console log.)
+
+function a(b,c){
+    for(var i=b; i<c; i++) {
+       console.log(i);
+   }
+   return b*c;
+}
+a(0,10);
+console.log(a(0,10));
+
+11. Nothing happens because the function is not called.
+
+function a(){
+    for(var i=0; i<10; i++){
+       for(var j=0; j<10; j++){
+           console.log(j);
+       }
+       console.log(i);
+    }
+}
+
+12. Nothing happens because the function is not called.
+
+function a(){
+    for(var i=0; i<10; i++){
+        for(var j=0; j<10; j++){
+            console.log(i,j);
+        }
+        console.log(j,i);
+    }
+}
+
+13. Will log 10 to the console. Function is not called.
+
+var z = 10;
+function a(){
+    var z = 15;
+    console.log(z);
+}
+console.log(z);
+
+14. Will log 15 and then 10 to the console.
+
+var z = 10;
+function a(){
+    var z = 15;
+    console.log(z);
+}
+a();
+console.log(z);
+
+15. Will log 15 as part of the function and then log 15 again as the new value of z is 15.
+
+var z = 10;
+function a(){
+    var z = 15;
+    console.log(z);
+    return z;
+}
+z = a();
+console.log(z);
