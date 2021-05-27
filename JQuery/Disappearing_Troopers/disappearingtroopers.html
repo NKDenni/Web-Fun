@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="troopers.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jQuery_Troopers.js"></script>
+    <title>Disappearing Troopers</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">
+        <img src="images/Empire.png" alt="Empire Logo" />
+        <h1>JQuery Functions assignment</h1>
+        <img src="images/Rebel.png" alt="Rebel Logo" />
+      </div>
+      <div class="content">
+        <h4>Hide/Show</h4>
+        <div class="interaction">
+          <img
+            id="droids"
+            src="images/EmojiBlitzC-3PO-PowerUp.png"
+            alt="C3PO and R2D2"
+          />
+        </div>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        <p>These are not the Droids you are looking for.</p>
+      </div>
+      <div class="content">
+        <h4>Slide Down/Up</h4>
+        <div class="interaction">
+          <img
+            id="t1"
+            class="trooper"
+            src="images/EmojiBlitzStormtrooper1.png"
+            alt="Stormtrooper"
+          />
+          <img
+            id="d1"
+            src="images/EmojiBlitzC-3PO-PowerUp.png"
+            alt="C3PO and R2D2"
+          />
+        </div>
+        <div class="interaction">
+          <button id="slidedown">SlideDown</button>
+          <button id="slideup">SlideUp</button>
+        </div>
+        <p>
+          Slide down to reveal the storm trooper! Slide up to hide the droids!
+        </p>
+      </div>
+      <div class="content">
+        <h4>SlideToggle</h4>
+        <div class="lightsaber">
+          <img
+            id="beam"
+            src="images/Blue-Light-Saber-beam.png"
+            alt="Light saber beam"
+          />
+          <img id="hilt" src="images/Light-Saber-hilt.png" alt="Light saber" />
+        </div>
+        <button class="onoff">On/Off</button>
+        <p>Click to turn on/off the lightsaber.</p>
+      </div>
+      <div class="content">
+        <h4>Fade in/out</h4>
+        <button id="fadein">Fade in</button>
+        <div class="interaction">
+          <img
+            class="trooper"
+            src="images/EmojiBlitzStormtrooper1.png"
+            alt="Stormtrooper"
+          />
+          <img
+            class="trooper"
+            src="images/EmojiBlitzStormtrooper-Mandalorian.png"
+            alt="Stormtrooper Rough"
+          />
+          <img
+            class="trooper"
+            src="images/EmojiBlitzDeathTrooper1.png"
+            alt="Deathtrooper"
+          />
+        </div>
+        <p>Click fade in to reveal the enemy troopers.</p>
+        <p>Click fade out to help the droid escape!</p>
+        <button id="fadeout">Fade out</button>
+        <img
+          id="run"
+          src="images/EmojiBlitzC-3PO-PowerUp.png"
+          alt="C3PO and R2D2"
+        />
+      </div>
+      <div class="content">
+        <h4>Before/After</h4>
+        <div class="interaction">
+          <div id="door1"></div>
+          <img
+            id="dt"
+            src="images/EmojiBlitzDeathTrooper1.png"
+            alt="Deathtrooper"
+          />
+          <img
+            id="d2"
+            src="images/EmojiBlitzC-3PO-PowerUp.png"
+            alt="C3PO and R2D2"
+          />
+          <div id="door2"></div>
+        </div>
+        <div class="interaction">
+          <button id="before">Before</button>
+          <button id="after">After</button>
+        </div>
+        <p>
+          Click the buttons to close the doors and help the droids run away!
+        </p>
+      </div>
+      <div class="content">
+        <h4>Prepend: Oh no! More stormtroopers!</h4>
+        <div class="bunker">
+          <img
+            src="images/EmojiBlitzStormtrooper-PowerUp.png"
+            alt="Stormtrooper with blaster"
+          />
+        </div>
+        <button id="spawn">Spawn</button>
+        <div class="interaction">
+          <img src="images/EmojiBlitzR2D2-Nervous.png" alt="R2D2 nervous" />
+          <img src="images/EmojiBlitzC-3PO-Nervous.png" alt="C3PO nervous" />
+        </div>
+        <p>Click the button to spawn more Stormtroopers</p>
+      </div>
+      <div class="content">
+        <h4>HTML</h4>
+        <p id="end">This is the end.</p>
+        <div id="final"></div>
+        <button id="goodbye">HTML</button>
+        <p>Click the button to see a new message.</p>
+      </div>
+    </div>
+  </body>
+</html>
