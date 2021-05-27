@@ -1,1 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* outline: 1px dashed red; */
+}
 
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  background: cornflowerblue;
+  width: 1000px;
+  height: auto;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 20px 0px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-bottom: 1px dashed black;
+  border-top: 1px dashed black;
+}
+
+h3 {
+    padding: 20px;
+}
+
+.interaction {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  border-radius: 3px;
+  background-color: silver;
+  padding: 3px;
+  margin: 10px;
+}
+
+img {
+  width: 200px;
+  height: auto;
+}
+
+.trooper {
+    width: 175px;
+    height: auto;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    padding: 0px 20px;
+}
+
+.allies img {
+    padding-top: 20px;
+    width: 175px;
+    height: auto;
+}
